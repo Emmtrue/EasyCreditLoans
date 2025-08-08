@@ -1,0 +1,25 @@
+import { MetadataRoute } from 'next'
+ 
+export default function manifest(): MetadataRoute.Manifest {
+  return {
+    name: 'Mwananchi Credit - Quick M-Pesa Loans',
+    short_name: 'Mwananchi Credit',
+    description: 'Quick, accessible personal loans directly disbursed to your M-Pesa accounts.',
+    start_url: '/',
+    display: 'standalone',
+    background_color: '#E0F7FA',
+    theme_color: '#2962FF',
+    icons: [
+      {
+        src: 'https://placehold.co/192x192.png',
+        sizes: '192x192',
+        type: 'image/png',
+      },
+      {
+        src: 'https://placehold.co/512x512.png',
+        sizes: '512x512',
+        type: 'image/png',
+      },
+    ],
+  }
+}
